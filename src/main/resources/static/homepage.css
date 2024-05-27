@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+
+}
+.main-container{
+   min-height: calc(100vh - 152px);
+}
+.card{
+    width: 100%;
+    max-width: 600px;
+}
+.grid-wrapper{
+    background-color: red;
+    display: grid;
+    grid-template-areas: "right-div" "left-div";
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr  1fr;
+    row-gap: 50px;
+
+}
+.left-div{
+    grid-area: left-div;
+}
+.right-div{
+    grid-area: right-div;
+}
+img{
+   width: 100%;
+    max-width: 450px;
+
+}
+form{
+    width: 100%;
+    max-width: 450px;
+}
+.card{
+    width: 100%;
+}
+.card p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.card input{
+    margin-bottom:40px;
+    height: 35px;
+}
+@media screen and(min-width: 850px) {
+    .grid-wrapper{
+        background-color: red;
+        display: grid;
+        grid-template-areas: "right-div" "left-div";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr  1fr;
+        row-gap: 50px;
+
+    }
+    
+}
